@@ -21,8 +21,8 @@ struct TopArticleView: View {
                     if  let image = phase.image {
                         image
                             .resizable()
-                        //  .scaledToFill()
-                            .frame(height: 150)
+                            .scaledToFill()
+                            .frame(width: 260, height: 150)
                             .cornerRadius(10)
                     } else {
                         ZStack {
@@ -58,4 +58,8 @@ struct TopArticleView: View {
         .background(.background)
         .cornerRadius(10)
     }
+}
+
+#Preview {
+    HomeView()
 }
